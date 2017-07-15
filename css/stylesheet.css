@@ -1,17 +1,51 @@
-table {
-  width: 720px;
-  height: 720px;
-  border-spacing: 0;
+html {
+  background-color: #4FD5D6;
 }
 
-.clear {
-  width: 960px;
+table {
+  width: 70%;
+  height: 720px;
+  border-spacing: 0;
+  background-color: white;
+  border: 2px solid black;
+}
+
+h1 {
+  text-align: center;
+}
+
+.button-wrapper {
+  text-align: center;
+}
+
+.button-wrapper button {
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: white;
 }
 
 td {
-  border: 1px solid black;
+  border: none;
 }
 
-.hovered {
-  background-color: blue;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.table-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sketchpad {
+  border: 2px solid black;
+  background-color: red;
+  width: 75%;
+  margin-left: 13%;
 }

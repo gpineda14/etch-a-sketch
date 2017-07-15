@@ -1,8 +1,10 @@
 var size = 16;
+var color;
+var colors = ["green", "maroon", "yellow", "orange", "purple", "blue"];
 $(document).ready(function() {
   createGrid(size);
   $("td.entry").hover(function() {
-    $(this).addClass("hovered");
+    $(this).css({"background-color":"black"});
   });
 });
 
@@ -25,7 +27,7 @@ function newGrid() {
   setGridSize();
   createGrid(size);
   $("td.entry").hover(function() {
-    $(this).addClass("hovered");
+    $(this).css({"background-color": "black"});
   });
 }
 
@@ -40,4 +42,12 @@ function sizeEntries(size) {
   var height = 720 / size;
   var width = 720 / size;
   $("td.entry").css({"height": height, "width": width});
+}
+
+function changeColor() {
+  var index = Math.floor(Math.random() * 6);
+  color = colors[index];
+  $("td.entry").hover(function() {
+    $(this).css({"background-color": color});
+  });
 }

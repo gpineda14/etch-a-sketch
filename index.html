@@ -6,8 +6,18 @@
   <script type="text/javascript" src="js/app.js"></script>
 </head>
 <body>
-    <button type="submit" class="clear">Clear</button>
-    <table id="grid" class="pad">
-    </table>
+  <div class="sketchpad">
+    <h1> Etch A Sketch </h1>
+    <div class="table-wrapper">
+      <table class="pad">
+      </table>
+    </div>
+    <div class="container">
+      <div class="button-wrapper">
+        <button type="submit" onclick="newGrid()" class="clear">Clear</button>
+        <button type="submit" onclick="changeColor()">Change Color</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
